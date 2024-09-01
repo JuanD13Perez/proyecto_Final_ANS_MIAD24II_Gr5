@@ -53,22 +53,14 @@ La gestión de la cobertura educativa gira en torno a la modernización del proc
 
 ## Data
 
-The original data used in this project is from a public Kaggle dataset called "Banking Dataset - Marketing Targets." Each row in this dataset contains information about a company's customers, including both numerical and categorical fields. This diversity in data types opens up various approaches to the problem.
+Usamos tres fuentes de datos:
 
-For this project, we will focus on the first 8 columns of the dataset, which include:
+- `inscripciones`: contiene información de estudiantes solicitantes de cupo para el año 2024.
+- `icfes`: contiene información de puntajes en las pruebas saber en el período 2013-2023 por sede educativa.
+- `capacidad`: contiene información de las capacidad de los colegios de acuerdo al último informe del 2013.
 
-- `age` (numeric)
-- `job`: type of job (categorical)
-- `marital`: marital status (categorical)
-- `education`: education level (categorical)
-- `default`: has credit in default? (binary)
-- `balance`: average yearly balance in euros (numeric)
-- `housing`: has a housing loan? (binary)
-- `loan`: has a personal loan? (binary)
 
-The project uses the training dataset from Kaggle, which can be found in the "data" folder of the project repository as a compressed file. Inside the compressed file, you'll find two CSV files: `train.csv` (the original training dataset) and `embedding_train.csv` (the dataset after performing an embedding, which will be explained later).
-
-To understand the project's structure, here's an overview of the project directory:
+A continuación detallamos la estructura del repositorio:
 
 ```
 clustering_llm
