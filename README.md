@@ -79,13 +79,13 @@ clustering_llm
 
 Se usa Python 3.9 a lo largo del proyecto y las siguientes librerías.
 
--`matplotlib   == 3.9.2`
--`numpy        == 2.0.2`
--`pandas       == 2.2.2`
--`scipy        == 1.13.1`
--`seaborn      == 0.13.2`
--`session_info == 1.0.0`
--`sklearn      == 1.5.1`
+- `matplotlib==3.9.2`
+- `numpy==2.0.2`
+- `pandas==2.2.2`
+- `scipy==1.13.1`
+- `seaborn==0.13.2`
+- `session_info==1.0.0`
+- `sklearn==1.5.1`
 
 
 
