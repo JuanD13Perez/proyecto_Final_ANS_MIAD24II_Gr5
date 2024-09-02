@@ -5,12 +5,16 @@
 </h1>
 
 
-# Titulo
-´Missing´
+![Badge](https://img.shields.io/badge/python-3.8%20%7C%203.9%20%7C%203.10-blue)
+
+
+# Análisis de Asignaciones de Cupos en Colegios Distritales Mediante Técnicas de Aprendizaje No Supervisado. 
 
 ## Problema
 
-La asignación de colegios en Bogotá es un proceso engorroso que requiere el cáclulo de diferentes puntajes y en ocasiones puede perjudicar a algunos estudiantes. En este proyecto trataremos de agrupar estudiantes en clusters similares y compararemos los ranking de colegios a los que quedan asignados y otras métricas.
+La asignación de colegios en Bogotá es un proceso complejo que requiere el cálculo de diferentes puntajes, lo cual puede en ocasiones perjudicar a ciertos estudiantes. En este proyecto, proponemos agrupar a los estudiantes en clúster similares y comparar los rankings de colegios a los que son asignados, junto con otras métricas. Para ello, evaluamos el uso de algoritmos no supervisados y estudiamos sus implicaciones en la mejora de la equidad educativa. Exploramos estrategias para adaptar estos algoritmos con el fin de hacerlos más justos, subrayando la necesidad de mitigar sesgos y considerar variables sensibles, logrando así resultados de agrupamiento más equitativos.
+
+Puede acceder al documento del equipo [aquí](https://uniandes-my.sharepoint.com/:w:/r/personal/s_gutierrez11234_uniandes_edu_co/_layouts/15/doc2.aspx?sourcedoc=%7B83327737-2cfe-4bf7-85ee-9fb37aeb7ac3%7D&action=edit&wdPid=6281dde4)
 
 ## Metodología (propuesta)
 
