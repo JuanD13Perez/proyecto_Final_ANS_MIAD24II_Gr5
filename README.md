@@ -14,22 +14,25 @@
 
 ## Problema
 
-La asignación de colegios en Bogotá es un proceso complejo que requiere el cálculo de diferentes puntajes, lo cual puede en ocasiones perjudicar a ciertos estudiantes. En este proyecto, proponemos agrupar a los estudiantes en clúster similares y comparar los rankings de colegios a los que son asignados, junto con otras métricas. Para ello, evaluamos el uso de algoritmos no supervisados y estudiamos sus implicaciones en la mejora de la equidad educativa. Exploramos estrategias para adaptar estos algoritmos con el fin de hacerlos más justos, subrayando la necesidad de mitigar sesgos y considerar variables sensibles, logrando así resultados de agrupamiento más equitativos.
+La asignación de cupos a colegios distritales en Bogotá es un proceso complejo que requiere el cálculo de diferentes puntajes, lo cual puede en ocasiones perjudicar a ciertos estudiantes. En este proyecto se propone agrupar a los aspirantes en clústers similares y comparar los rankings de colegios asignados, con otras métricas. Para ello, se evalúa el uso de algoritmos no supervisados y se estudia sus implicaciones en la mejora de la equidad educativa. Exploramos estrategias para adaptar estos algoritmos con el fin de hacerlos más justos, subrayando la necesidad de mitigar sesgos y considerar variables sensibles, logrando así resultados de agrupamiento más equitativos.
 
-Puede acceder al documento del equipo [aquí](https://uniandes-my.sharepoint.com/:w:/r/personal/s_gutierrez11234_uniandes_edu_co/_layouts/15/doc2.aspx?sourcedoc=%7B83327737-2cfe-4bf7-85ee-9fb37aeb7ac3%7D&action=edit&wdPid=6281dde4)
+Puede acceder al documento del equipo [aquí](https://uniandes-my.sharepoint.com/:w:/r/personal/s_gutierrez11234_uniandes_edu_co/_layouts/15/doc2.aspx?sourcedoc=%7B83327737-2cfe-4bf7-85ee-9fb37aeb7ac3%7D&action=edit&wdPid=6281dde4).
 
 ## Metodología (propuesta)
 
-Una de las limitaciones de los algoritmos de clustring es que para modelar variables categoricas es necesario utilizar distancias dificiles de interpretar o que bien no logran capturan las nociones de densidad (DBSCAN) adecuadamente. Por ello, decidimos para este proyecto utilizar un acercamiento que nos permita combinar las variables categoricas en un texto que después tokenizamos por medio del uso de un LLM. Una vez hecho eso, aplicamos una técnica de reducción (PCA, SVD) y finalmente ejecutamos el algoritmo con datos númericos únicamente.
+En este proyecto, proponemos una metodología que convierte variables categóricas en texto, el cual se transforma en vectores numéricos mediante embeddings utilizando un modelo de lenguaje (LLM). A continuación, aplicamos técnicas de reducción dimensional, como PCA o SVD, y ejecutamos el algoritmo de clustering con datos numéricos. Se sabe que los embeddings ayudan a que frases y textos con significados semánticos similares se representen como vectores cercanos, lo cual puede beneficiar la implementación de algoritmos como el DBSCAN donde la densidad de los datos juega un papel importante.  
 
-En este proyecto compararemos el desempeño de lo sisguientes algoritmos.
-1. Kmeans. 
-2. DBSCAN.
-3. KMedodis.
-4. LLM Parcial (sobre variables categóricas únicamente) + PCA + KMeans/ KMedoids/DSCAN.
-5. LLM Total + PCA + KMeans/KMedoids/DSCAN.
+Se planea implementar DBSCAN como algoritmo principal, dado que es especialmente adecuado para manejar bases de datos desbalanceadas y con valores atípicos. DBSCAN se basa en la densidad de los puntos y permite identificar grupos de estudiantes con características similares sin requerir que se especifique el número de clúster previamente, además de ser más robusto frente a outliers, lo cual es crucial en un conjunto de datos desbalanceado. Los embeddings generados a partir de un modelo de lenguaje (LLM) también benefician a DBSCAN, ya que representan textos con significados semánticos similares como vectores cercanos, mejorando la agrupación basada en densidad. Como alternativas, K-Means se empleará para comparar resultados cuando los datos estén más balanceados o tengan una estructura clara, aunque es menos efectivo frente a outliers. K-Medoids ofrece mayor robustez ante puntos atípicos en comparación con K-Means, pero no maneja la densidad de la misma manera que DBSCAN. Finalmente, los enfoques que combinan LLM y técnicas de reducción dimensional como PCA o SVD proporcionarán comparaciones valiosas al evaluar el desempeño de estos algoritmos, permitiendo determinar qué enfoque facilita asignaciones más justas de cupos en colegios en términos de calidad educativa. 
+ 
+En resumen, se planea implementar los siguientes algoritmos: 
 
+* LLM Parcial (aplicado a variables categóricas únicamente) + DBSCAN. (Principal). 
 
+* LLM Total (aplicado a todas las variables) + PCA + DBSCAN. 
+
+* K-Means. (Alternativa). 
+
+* K-Medoids. (Alternativa). 
 
 ## Detalles del problema de negocio
 
