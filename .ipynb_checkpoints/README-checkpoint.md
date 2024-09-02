@@ -5,9 +5,7 @@
 </h1>
 
 [<img src="https://img.shields.io/badge/python-3.8%20%7C%203.9%20%7C%203.10-blue" align="right"/>]
-<br clear="right" />
 [<img src="https://img.shields.io/badge/GitHub-Local%20LLM-blue?logo=github&style=plastic" align="right"/>]
-<br clear="right" />
 
 
 # Análisis de Asignaciones de Cupos en Colegios Distritales Mediante Técnicas de Aprendizaje No Supervisado. 
