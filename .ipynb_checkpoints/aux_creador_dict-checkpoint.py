@@ -1,7 +1,7 @@
 import pickle
 
-dict_i = 
-{'FECHA_INSCRITO': 'datetime64[ns]',
+dict_i = {
+ 'FECHA_INSCRITO': 'datetime64[ns]',
  'INR_IDEN_NUMERO': 'str',
  'INR_NACI_FECHA': 'datetime64[ns]',
  'INR_GRADO': 'int64',
@@ -25,6 +25,7 @@ dict_i =
  'ASIGNADO_GRADO': 'float64',
  'ASIGNADO_OPCION': 'float64',
  'ASIGNADO_DANE_SEDE': 'str',
+ 'ASIGNADO_DANE_IED':'str',
  'ASIGNADO_LOCALIDAD': 'str',
  'ASIGNADO_FECHA': 'datetime64[ns]'}
 

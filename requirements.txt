@@ -1,0 +1,12 @@
+jupyterlab
+pandas
+numpy
+PyPDF2
+wordcloud
+matplotlib
+session_info
+scikit-learn
+unidecode
+gensim
+openpyxl
+#spacy==3.3.1
