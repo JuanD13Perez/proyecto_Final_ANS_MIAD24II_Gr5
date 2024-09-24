@@ -2,7 +2,7 @@ import pickle
 
 dict_i = {
  'FECHA_INSCRITO': 'datetime64[ns]',
- 'INR_IDEN_NUMERO': 'str',
+ #'INR_IDEN_NUMERO': 'str',
  'INR_NACI_FECHA': 'datetime64[ns]',
  'INR_GRADO': 'int64',
  'GRD_NOMBRE': 'str',

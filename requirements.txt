@@ -1,12 +1,9 @@
-jupyterlab
+#jupyterlab
 pandas
 numpy
-PyPDF2
-wordcloud
 matplotlib
+seaborn
 session_info
 scikit-learn
-unidecode
-gensim
 openpyxl
-#spacy==3.3.1
+sentence_transformers
