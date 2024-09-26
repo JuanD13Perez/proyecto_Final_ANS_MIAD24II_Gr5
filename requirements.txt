@@ -7,3 +7,4 @@ session_info
 scikit-learn
 openpyxl
 sentence_transformers
+scipy
